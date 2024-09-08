@@ -1,0 +1,30 @@
+Ref: 
+https://www.kaggle.com/datasets/cs49adityarajsharma/credit-scoring-data?resource=download
+https://www.kaggle.com/code/jayrdixit/credit-scoring/input
+
+This dataset analysis aims to:
+- Explore and analyze a Credit Score dataset to gain insights into customer creditworthiness and segmentation. 
+- The dataset contains information on various factors that influence credit scores, such as payment history, credit utilization ratio, number of credit accounts, education level, and employment status. 
+- The analysis will utilize the k-means algorithm to perform clustering and "identify distinct groups of customers" based on their credit scores.
+
+Back up file :
+data_reshape = np.array(data['Gender']).reshape(-1,1)
+one_hot_Transformation = one_hot.fit_transform(data_reshape).toarray()
+# pd.DataFrame(one_hot_Transformation)
+# G-F / G-M
+data_reshape=np.array(data['Marital Status']).reshape(-1,1)
+one_hot_Transformation=one_hot.fit_transform(data_reshape).toarray()
+# pd.DataFrame(one_hot_Transformation)
+# MS-D/ MS-M /MS-S
+data_reshape=np.array(data['Education Level']).reshape(-1,1)
+one_hot_Transformation=one_hot.fit_transform(data_reshape).toarray()
+# one_hot_Transformation
+#E-B /E-H /E-M /E-Phd
+data_reshape=np.array(data['Employment Status']).reshape(-1,1)
+one_hot_Transformation=one_hot.fit_transform(data_reshape).toarray()
+# one_hot_Transformation
+# ES-E /ES-S /ES-U 
+data_reshape=np.array(data['Type of Loan']).reshape(-1,1)
+one_hot_Transformation=one_hot.fit_transform(data_reshape).toarray()
+one_hot_Transformation
+#L-A /L-H /L-P
